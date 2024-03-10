@@ -26,7 +26,8 @@ def main():
 
             elif choice == '2':
                 topic = input("Enter topic to retrieve: ")
-                print("Notes for topic:", proxy.get_notes(topic))
+                notes = proxy.get_notes(topic)
+                print(f"Notes for topic '{topic}': {notes}")
 
             elif choice == '3':
                 topic = input("Enter topic: ")
